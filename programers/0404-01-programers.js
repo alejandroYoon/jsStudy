@@ -11,9 +11,12 @@
 // solution (44,2)
 // console.log(result)
 
-let a = 25;
-let b = 10;
+// let a = 25;
+// let b = 10;
 
-console.log ( a % b )
-
+// console.log ( a % b )
+function solution(num1, num2) {
+    let answer = Math.floor(num1 / num2);
+    return answer;
+}
 
