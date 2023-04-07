@@ -12,3 +12,8 @@ function parse() {}
 function main() {
   solution();
 }
+
+function main(){
+  let a=;
+  
+}
