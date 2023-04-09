@@ -46,7 +46,7 @@ let chairLeatherPoang = {
     가격 : '239000',
     디자이너 : 'Noboru Nakamura',
     치수 : '',
-    커버 : '다크브라운', '에그쉘',
+    커버 : ['다크브라운', '에그쉘'],
     보증 : '10',
     제조사 : 'IKEA of Sweden AB'
 }
@@ -59,7 +59,7 @@ let chairRattanRadviken = {
     가격 : '229000',
     디자이너 : 'Andreas Fredriksson',
     치수 : '',
-    커버 : '다크브라운','블랙',
+    커버 : ['다크브라운','블랙'],
     보증 : '10',
     제조사 : 'IKEA of Sweden AB'
 }
@@ -72,7 +72,7 @@ let chairRattanBuskbo = {
     가격 : '89900',
     디자이너 : 'Nike Karlsson',
     치수 : '',
-    커버 : '블랙', '베이지', '그레이',
+    커버 : ['블랙', '베이지', '그레이'],
     보증 : '10',
     제조사 : 'IKEA of Sweden AB'
 }
@@ -85,7 +85,7 @@ let chairWoodPersbol = {
     가격 : '249000',
     디자이너 : 'Nike Karlsson',
     치수 : '',
-    커버 : '블랙', '베이지', '그레이',
+    커버 : ['블랙', '베이지', '그레이'],
     보증 : '10',
     제조사 : 'IKEA of Sweden AB'
 }
@@ -98,7 +98,7 @@ let chairWoodFroset = {
     가격 : '99900',
     디자이너 : 'S Fager',
     치수 : '',
-    커버 : '레드스테인', '블랙스테인', '화이트스테인',
+    커버 : ['레드스테인', '블랙스테인', '화이트스테인'],
     보증 : '10',
     제조사 : 'IKEA of Sweden AB'
 }
