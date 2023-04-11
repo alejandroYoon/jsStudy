@@ -139,6 +139,9 @@ let class2 = students.filter(el => el.class === 2).map(el => el);
 console.log(class2);
 
 // 2. grade가 2등급 이상인 학생들을 모두 보여주세요
+console.log(" ---------- 2")
+let grade2 = students.filter(el => el.grade === 2).map(el => el);
+console.log(grade2);
 
 // 3. 이영수의 이름을 국영수로 변경해주고 바뀐 학생의 정보만 보여주세요
 
