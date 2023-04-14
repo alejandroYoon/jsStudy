@@ -57,18 +57,16 @@ const movies = [
 ];
 
 {
-  // 1. 장르가 어드벤쳐인 영화의 제목만 보여주세요.
+// 1. 장르가 어드벤쳐인 영화의 제목만 보여주세요.
   let result = movies.filter(mov => mov.장르.includes("어드벤처")).map(mov => mov.id);
   console.log(result)
 }
-// {
-//   // 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
-//   const input_data = movies;
-//   const ouput_data = input_data;
-//   console.log(ouput_data);
-// }
-// {
-//   // 3. 개봉년도가 3번째인 영화의 정보를 모두 출력해주세요
+{
+// 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
+let shin = movies.filter(mov => mov.감독.includes("신카이 마코토")).map(mov => mov.장르);
+console.log(shin)
+}
+// 3. 개봉년도가 3번째인 영화의 정보를 모두 출력해주세요
 //   const input_data = movies;
 //   const ouput_data = input_data;
 //   console.log(ouput_data);
