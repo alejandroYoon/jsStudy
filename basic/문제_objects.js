@@ -66,14 +66,19 @@ const movies = [
 let shin = movies.filter(mov => mov.감독.includes("신카이 마코토")).map(mov => mov.장르);
 console.log(shin)
 }
+
+
 // 3. 개봉년도가 3번째인 영화의 정보를 모두 출력해주세요
-//   const input_data = movies;
-//   const ouput_data = input_data;
-//   console.log(ouput_data);
-// }
-// {
-//   // 4. 스튜디오 지브리에서 만든 영화들의 정보만 출력하는데 제작사를 코믹스 웨이브 필름으로 바꿔서 출력해주세요
-//   const input_data = movies;
-//   const ouput_data = input_data;
-//   console.log(ouput_data);
-// }
+console.log(" ------------ 3")
+let yearly3 = movies.sort((a,b) => a.개봉년도 - b.개봉년도)[2]
+// let yearly3 = movies.sort((a,b) => a.개봉년도 - b.개봉년도)[2]
+  // console.log(movies.indexOf(yearly3))
+  console.log(yearly3)
+
+  // 4. 스튜디오 지브리에서 만든 영화들의 정보만 출력하는데 제작사를 코믹스 웨이브 필름으로 바꿔서 출력해주세요
+console.log(" ------------ 4")
+let givry= movies.filter((mov) => mov.제작사 === "스튜디오 지브리").map((mov) => mov.제작사)
+// let givry= movies.filter((mov) => mov.제작사 === "스튜디오 지브리").map((mov) => mov.제작사).splice((mov) => mov.제작사 "코믹스 웨이브 필름")
+// let givry= movies.filter((mov) => mov.제작사 === "스튜디오 지브리").replace((mov) => mov.제작사.스튜디오 지브리,mov.코믹스 웨이브 필름)
+// let givry= movies.filter((mov) => mov.제작사 === "스튜디오 지브리").str_text.replace(스튜디오 지브리/gi, '코믹스 웨이브 필름')
+console.log(givry)
