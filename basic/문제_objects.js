@@ -19,7 +19,7 @@ const movies = [
     프로듀서: "스즈키 토시오",
     제작사: "스튜디오 지브리",
     개봉년도: 2001,
-    장르: ["애니메이션", "판타지", "어드벤쳐"],
+    장르: ["애니메이션", "판타지", "어드벤처"],
   },
   {
     id: 003,
@@ -58,25 +58,24 @@ const movies = [
 
 {
   // 1. 장르가 어드벤쳐인 영화의 제목만 보여주세요.
-  const input_data = movies;
-  const ouput_data = input_data;
-  console.log(ouput_data);
+  let result = movies.filter(mov => mov.장르.includes("어드벤처")).map(mov => mov.id);
+  console.log(result)
 }
-{
-  // 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
-  const input_data = movies;
-  const ouput_data = input_data;
-  console.log(ouput_data);
-}
-{
-  // 3. 개봉년도가 3번째인 영화의 정보를 모두 출력해주세요
-  const input_data = movies;
-  const ouput_data = input_data;
-  console.log(ouput_data);
-}
-{
-  // 4. 스튜디오 지브리에서 만든 영화들의 정보만 출력하는데 제작사를 코믹스 웨이브 필름으로 바꿔서 출력해주세요
-  const input_data = movies;
-  const ouput_data = input_data;
-  console.log(ouput_data);
-}
+// {
+//   // 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
+//   const input_data = movies;
+//   const ouput_data = input_data;
+//   console.log(ouput_data);
+// }
+// {
+//   // 3. 개봉년도가 3번째인 영화의 정보를 모두 출력해주세요
+//   const input_data = movies;
+//   const ouput_data = input_data;
+//   console.log(ouput_data);
+// }
+// {
+//   // 4. 스튜디오 지브리에서 만든 영화들의 정보만 출력하는데 제작사를 코믹스 웨이브 필름으로 바꿔서 출력해주세요
+//   const input_data = movies;
+//   const ouput_data = input_data;
+//   console.log(ouput_data);
+// }
