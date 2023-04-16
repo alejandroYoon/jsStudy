@@ -52,7 +52,8 @@ console.log(" 5. ----------- 문다은 ")
 
   let input_data6 = [10, 20, 30, 40, 50];
   input_data6.splice(0,1,1,2,3);
-  output_data6 = input_data6.splice(4,3,25).map((num) => num[0];
+  input_data6.splice(4,3,25)
+  output_data6 = input_data6.map(item => input_data6)[0];
   console.log(output_data6); // [1, 2, 3, 20, 25]
 
 
@@ -60,7 +61,7 @@ console.log(" 5. ----------- 문다은 ")
 
 
 
-  
+
   console.log(" 10. ----------- 문다은 ")
 
   let input_data7 = [10, 20, 30, 40, 50];
