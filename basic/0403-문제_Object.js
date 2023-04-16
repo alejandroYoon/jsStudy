@@ -7,14 +7,23 @@
 
 // 각각의 id와 name의 값으로 '웹페', '이지' ,'단순' 을 가지고 있는 객체를 만드시오
 
-id = [ "웹페", "이지", "단순" ]
-name = [ "웹페", "이지", "단순" ]
+console.log(" ----------- 객체선언 ")
+obj1 = [
+    {name : "웹페"},
+    {name : "이지"},
+    {name : "단순"},
+]
 
+// {
+//   객체 접근
+//   console.log(output_data); // 이지
+// }
 
 // 문다은
 //   객체 접근
-let output_data = id[1]
-console.log(output_data); // 이지
+console.log(" ----------- 1")
+// let output_data = ojb1[1]
+console.log(obj1[1].name); // 이지
 
 // 배상아
 //   객체 값 변경
