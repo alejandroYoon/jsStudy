@@ -33,15 +33,29 @@ console.log(" 5. ----------- 문다은 ")
   console.log(" 7. ----------- 문다은 ")
 
   // for 사용
-  let input_data4 = [1, 2, 3, 4, 5];
-  console.log(input_data4); // [11,12,13,14,15]
+  // let input_data4 = [1, 2, 3, 4, 5];
+  // for (let i = 0; i <= input_data4.length; i++) {
+  //   input_data4[i] + 10;
+  //   return;
+  //   }
+  
+  // console.log(input_data4); // [11,12,13,14,15]
+  // console.log(result); // [11,12,13,14,15]
+
+
 
 
   console.log(" 8. ----------- 배상아 ")
 
   // forEach 사용
-  let input_data5 = [10, 20, 30, 40, 50];
-  console.log(input_data5); // [5, 10, 15, 20, 25]
+  // let input_data5 = [10, 20, 30, 40, 50];
+  // input_data5.forEach(value => {
+  //   let value
+
+  // })
+  
+  // console.log(input_data5); // [5, 10, 15, 20, 25]
+  
 
 
   console.log(" 9. ----------- 윤진섭 ")
@@ -68,16 +82,17 @@ console.log(" 5. ----------- 문다은 ")
 
 
 
-  // console.log(" 10. ----------- 문다은 ")
+  console.log(" 10. ----------- 문다은 ")
+  let input_data7 = [10, 20, 30, 40, 50];
+  let output_data7 = input_data7.slice(2,4);
+  console.log(output_data7); // [30, 40]
 
-  // let input_data7 = [10, 20, 30, 40, 50];
-  // console.log(output_data7); // [30, 40]
 
 
-  // console.log(" 11. ----------- 배상아 ")
-
-  // let input_data8 = [10, 20, 30, 40, 50];
-  // console.log(input_data8); // [10, 20, 50]
+  console.log(" 11. ----------- 배상아 ")
+  let input_data8 = [10, 20, 30, 40, 50];
+  input_data8.splice(2,2);
+  console.log(input_data8); // [10, 20, 50]
 
 
   console.log(" 12. ----------- 윤진섭 ")
