@@ -25,6 +25,11 @@ console.log(" 5. ----------- 문다은 ")
   console.log(output_data3_1); // 5
 
 
+
+
+
+
+
   console.log(" 7. ----------- 문다은 ")
 
   // for 사용
@@ -53,7 +58,8 @@ console.log(" 5. ----------- 문다은 ")
   let input_data6 = [10, 20, 30, 40, 50];
   input_data6.splice(0,1,1,2,3);
   input_data6.splice(4,3,25)
-  output_data6 = input_data6.map(item => input_data6)[0];
+  let output_data6 = input_data6.map(input_data6 => input_data6);
+  // output_data6 = input_data6.map(() => input_data6)[0];
   console.log(output_data6); // [1, 2, 3, 20, 25]
 
 
@@ -62,22 +68,31 @@ console.log(" 5. ----------- 문다은 ")
 
 
 
-  console.log(" 10. ----------- 문다은 ")
+  // console.log(" 10. ----------- 문다은 ")
 
-  let input_data7 = [10, 20, 30, 40, 50];
-  console.log(output_data7); // [30, 40]
+  // let input_data7 = [10, 20, 30, 40, 50];
+  // console.log(output_data7); // [30, 40]
 
 
-  console.log(" 11. ----------- 배상아 ")
+  // console.log(" 11. ----------- 배상아 ")
 
-  let input_data8 = [10, 20, 30, 40, 50];
-  console.log(input_data8); // [10, 20, 50]
+  // let input_data8 = [10, 20, 30, 40, 50];
+  // console.log(input_data8); // [10, 20, 50]
 
 
   console.log(" 12. ----------- 윤진섭 ")
 
   let input_data9 = [10, 20, 30, 40, 50];
+  let output_data9 = input_data9.indexOf(40);
   console.log(output_data9); // 3 *인덱스 번호
+
+
+
+
+
+
+
+
 
 
   console.log(" 13. ----------- 문다은 ")
