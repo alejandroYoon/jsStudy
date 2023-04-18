@@ -55,16 +55,20 @@ let obj1 = [
 // console.log(" 배상아 ----------- 3")
 //   객체 찾기
   // 3번째 단순만 Key, value를 둘 다 출력하시오
-// console.log(obj1[2])
-// console.log(obj1[obj1.length - 1])
-// console.log(obj1[obj1.length - 1].name)
+
+// 방법1
+//  let a = obj1.find(item => item.name === "단순")
+//  console.log({name: a.name})
+
+// 방법2
+// console.log({name: obj1[2].name})
 
 
 
-console.log(" 윤진섭 ----------- 4")
-   const array = [1,2,3,4,5]
+// console.log(" 윤진섭 ----------- 4")
+//    const array = [1,2,3,4,5]
   // 위의 배열의 값을 가지고 객체의 '단순'을 출력하시오
-const result = array[1];
- console.log(result);
+// const result = array[1];
+//  console.log(result);
 //  console.log(obj1[2].name);
-  console.log(obj1[result].name);
+  // console.log(obj1[result].name);
