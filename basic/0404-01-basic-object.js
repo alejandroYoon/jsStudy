@@ -193,6 +193,6 @@ console.log(" ------------ 5번 문제(0404) - 배상아")
   ]
   */
 
-// ============= 4번 풀이
+// ============= 5번 풀이
 // let result = users.filter(user => user.name[0] === "윤");
 // console.log(result);
