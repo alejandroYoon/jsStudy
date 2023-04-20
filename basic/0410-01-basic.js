@@ -135,13 +135,13 @@ const students = [
 
 // 1. 2반의 학생들의 정보를 모두 보여주세요
 
-let class2 = students.filter(el => el.class === 2).map(el => el);
-console.log(class2);
+// let class2 = students.filter(el => el.class === 2).map(el => el);
+// console.log(class2);
 
 // 2. grade가 2등급 이상인 학생들을 모두 보여주세요
-console.log(" ---------- 2")
-let grade2 = students.filter(el => el.grade === 2).map(el => el);
-console.log(grade2);
+// console.log(" ---------- 2")
+// let grade2 = students.filter(el => el.grade === 2).map(el => el);
+// console.log(grade2);
 
 // 3. 이영수의 이름을 국영수로 변경해주고 바뀐 학생의 정보만 보여주세요
 
@@ -166,3 +166,37 @@ ex)
 // 7. 점수들의 평균값이 가장 높은 학생의 정보만 보여주세요
 
 // 8. 과학을 제외한 점수의 평균이 가장 낮은 학생의 정보만 보여주세요
+
+
+
+/* 문제풀이 순서
+0410-1번-문다은
+0410-2번-배상아
+0410-3번-윤진섭
+0410-4번-문다은
+0410-5번-배상아
+0410-6번-윤진섭
+0410-7번-문다은
+0410-8번-배상아
+  */
+
+
+// 0410 - 3번 윤진섭
+// 3. 이영수의 이름을 국영수로 변경해주고 바뀐 학생의 정보만 보여주세요
+// 방법1 
+
+// let a = students.filter(user => user.name === "이영수");
+// a.map(user => user.name = "국영수")
+// console.log(a)
+
+// 방법2
+// let a = [...students.map(user => user.name === "이영수"?{...user,name:"국영수"}:user)];
+// // console.log(a.find(user => user.name === "국영수"));
+// console.log(a.find(user => user.name ==="국영수"));
+
+
+
+// 0410 - 6번 윤진섭
+// 6. 나이가 17살 이하인 학생들만 보여주세요
+// let a = [...students.filter(user => user.age <= 17?{...user}:user)];
+// console.log(a.filter(user => user.age <= 17));
