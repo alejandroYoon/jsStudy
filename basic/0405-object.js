@@ -10,6 +10,43 @@ const webtoons = [
       company: "naver",
     },
   },
+
+  { 
+    name: "Mike", 
+    age: 30, 
+    sex: "m", 
+    school: { 
+      title: "seoul", 
+      scid: 1990, 
+      class: "computer"
+    },
+  },
+
+  {
+    name: "Jane", 
+    age: 27, 
+    sex: "f", 
+    school: {
+      title: "busan", 
+      scid: 4030, 
+      class: "english"
+    },
+  },
+  { 
+    name: "Tom", 
+    age: 10, 
+    sex: "m", 
+    school: {
+      title: "incheon", 
+      scid: 8400, 
+      class: "music"
+    },
+  },
+
+
+
+
+
   {
     id: 2,
     title: "전지적 독자 시점",
@@ -158,9 +195,6 @@ contribute: {
 
 
 
-
-
-
 console.log(" --------------- 문제풀이 2번 (윤진섭)")
 /* 문제 2. title이 전자적 독자 시점인 webtoon의 정보만 보여주세요.
 풀이 : title 이 "전지적 ~" 인것만 뽑기? 전지적 단어를 검색하는 방법은?
@@ -168,18 +202,12 @@ console.log(" --------------- 문제풀이 2번 (윤진섭)")
 2) filter() : 순회하며, true false 를 반환
 */
 
-
-
 // 출력방법 1
 // let a = webtoons.find(mov => mov.title === "전지적 독자 시점");
 
 // 출력방법 2
 // let a = webtoons.filter(mov => mov.title === "전지적 독자 시점");
 // console.log(a);
-
-
-
-
 
 
 
@@ -218,13 +246,6 @@ console.log(" --------------- 문제풀이 3번 (문다은)")
 
 
 
-
-
-
-
-
-
-
 console.log(" --------------- 문제풀이 4번 (배상아)")
 // 문제 4. naver에서 만든 웹툰들의 정보만 보여주세요.
 // console.log(search_list);
@@ -256,11 +277,6 @@ console.log(" --------------- 문제풀이 4번 (배상아)")
 
 
 
-
-
-
-
-
 console.log(" --------------- 문제풀이 5번 (윤진섭)")
 // 문제 5. "나혼자만 레벨업"의 genre이 이상합니다. "판타지"로 바꿔주세요.
 // console.log(change_list);
@@ -271,90 +287,12 @@ console.log(" --------------- 문제풀이 5번 (윤진섭)")
 //   change_list.genre = "판타지"
 // console.log(change_list)
 
-// 출력방법 2 (filter -> )
+// 출력방법 2 (filter -> filter 는 원본 배열을 바꾸지 못한다. filter 는 신규배열을 만들어 반환한다.)
 // let change_list = webtoons.filter(mov => mov.title === "나혼자만 레벨업");
 //   change_list.genre = "판타지"
 // console.log(change_list)
 
-// 배상아님 풀이
-// let change_list = webtoons.map((el) =>
-//   // 그렇지 않으면 object를 return
-//   el.title === "나혼자만 레벨업" ? { ...el, genre: "판타지" } : el
-// );
-// console.log(change_list);
-
-
-
-
-
 
 console.log(" --------------- 문제풀이 6번 (문다은)")
-
-// 문제 6. 혼자서 작업하고 있는 즉, writer와 illustrator 같은 webtoon들의 정보만 보여주세요
-// console.log(search_list);
-
-// for (i=0; i < webtoons.length ; i++){ // 5번 돌고
-// let a = webtoons.filter(mov => mov.contribute.writer === mov.contribute.illustrator);
-// console.log(a)
-// }
-
-  // console.log(a === b)
-  // let a = webtoons[i].filter(mov => mov.contribute.writer).map(mov => mov.contribute.writer); // i = 0 (첫번째 객체) 라이터
-  // console.log(a);
-  //let b = webtoons.filter(mov => mov.contribute.illustrator) // i = 0 (첫번째 객체) 라이터
-  // if ( a === b){ 
-  //   console.log(webtoons); // i = 0 
-  // }
-// }
-
-
-// let a = webtoons["5"]
-// console.log(a)
-// let a = webtoons.filter(mov => mov.id)
-// let b = a.contribute.writer
-// let c = a.contribute.illustrator
-// if (b == c){
-// console.log(a)
-// }
-
-
-// 문제풀이 1 - for 문 이용
-// for (i=0; i < webtoons.length ; i++){ // 5번 돌고
-//   let a = webtoons[i].contribute.writer
-//   let b = webtoons[i].contribute.illustrator
-//   if ( a === b ){
-//     console.log(webtoons[i])
-//   }
-// }
-
-// 문제풀이 2 = filter
-// let a = webtoons.filter(mov => mov.contribute.writer === mov.contribute.illustrator);
-// console.log(a)
-
 console.log(" --------------- 문제풀이 7번 (배상아)")
 
-// 문제 7. 작가중에 이상하게 이름이 올라가있는 사람을 지워주고, 자연스럽게 수정해주세요 해당 작품만 보여주세요
-// console.log(change_list);
-
-// let a = webtoons.map(mov => mov.contribute.writer)
-// console.log(a)
-
-// let a = webtoons[3].contribute.writer;
-// a.replace("이지형","");
-// a.indexOf()
-// let b = a.length
-// let b = a.replace('이지형','이산시')
-// console.log(a)
-
-// let change_list = webtoons.filter
-// console.log(change_list)
-
-// let a = webtoons.filter(mov => mov.contribute.writer).map
-// console.log(a)
-
-webtoons.map((e) => {
-  if (typeof e.contribute.writer === "object") {
-    e.contribute.writer = "이산시";
-  }
-  console.log(...webtoons);
-});

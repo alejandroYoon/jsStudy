@@ -111,13 +111,13 @@ const movies = [
 // 풀이 담당 : 윤진섭
 //   const input_data = movies;
 //   const ouput_data = input_data;
-//   console.log(ouput_data);
+// 방법1 (윤진섭) - filter 찾아서, map 으로 값 변경
+// let ouput_data =movies.filter(mov => mov.제작사 === "스튜디오 지브리")
+// ouput_data.map(mov => mov.제작사 = "코믹스 웨이브 필름")
+// console.log(ouput_data)
 
-// let a =movies.filter(mov => mov.제작사 === "스튜디오 지브리").map(mov => mov.제작사 = "코믹스 웨이브 필름")
-let ouput_data =movies.filter(mov => mov.제작사 === "스튜디오 지브리")
-ouput_data.map(mov => mov.제작사 = "코믹스 웨이브 필름")
-console.log(ouput_data)
 
-// a.제작사 = "코믹스 웨이브 필름"
-// console.log(a)
+
+
+
 
