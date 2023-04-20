@@ -97,6 +97,10 @@ const movies = [
 // const input_data = movies;
 // const ouput_data = input_data;
 
+
+
+
+
 // 방법1 (윤진섭) - filter 찾아서, map 으로 출력
 // let ouput_data = movies.filter(mov => mov.장르.includes("어드벤처")).map(user => user.제목);
 // console.log(ouput_data)
@@ -109,15 +113,34 @@ const movies = [
 
 //   // 4. 스튜디오 지브리에서 만든 영화들의 정보만 출력하는데 제작사를 코믹스 웨이브 필름으로 바꿔서 출력해주세요
 // 풀이 담당 : 윤진섭
+
+
+
 //   const input_data = movies;
 //   const ouput_data = input_data;
 // 방법1 (윤진섭) - filter 찾아서, map 으로 값 변경
-// let ouput_data =movies.filter(mov => mov.제작사 === "스튜디오 지브리")
-// ouput_data.map(mov => mov.제작사 = "코믹스 웨이브 필름")
-// console.log(ouput_data)
+//  let ouput_data = movies.filter(mov => mov.제작사 === "스튜디오 지브리")
+//  ouput_data.map(mov => mov.제작사 = "코믹스 웨이브 필름")
+// console.log(ouput_data.제작사)
 
 
+// let n_movie = movies.filter((item) => item.감독 == "신카이 마코토");
+// console.log(n_movie);
 
 
+// 2번 다은님 문제풀이
+
+// {
+//   // 2. 신카이 마코토 감독이 만든 영화들의 장르를 보여주세요.
+//   const input_data = movies;
+//   const ouput_data = input_data;
+//   console.log(ouput_data);
+// }
 
 
+// let n_movie = movies.filter((item) => item.감독 == "신카이 마코토");
+// console.log(n_movie);
+
+// for (i = 0; i < n_movie.length; i++) {
+//   console.log(n_movie[i]);
+// }
