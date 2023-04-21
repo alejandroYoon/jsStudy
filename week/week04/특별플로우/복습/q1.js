@@ -72,16 +72,68 @@ console.log("  6 --------------------------")
 
 
 
-// 풀이 (7) - in 으로 객체의 키가 존재하는지 확인하기
-// console.log("김성용" in user)
-// console.log(20 in user)
-// console.log("name" in user)
-// console.log("age" in user)
-// console.log("height" in user)
-
-
-
-
 
 // 문제2. 값이 “김성용”인 속성의 key 찾기
+// 풀이 2. 김성용 속성 key 찾기
+console.log("  문제 2 --------------------------")
+
+function b1 (name2, value2) {
+  return Object.keys(name2).find(key => name2[key] === value2 );
+}
+
+let key2 = b1(user, '김성용');
+console.log(key2);
+
+// user.filter(usr => Object.values(usr)).map(usr => )
+
+// for (let b1 of Object.values(user)){
+//   if (b1 === "김성용"){
+//     console.log(Object.keys(user))
+//   }
+// }
+
+// for (let a of Object.entries(user)){
+//     console.log(a[1]);
+//   // if (a["name"] === "김성용"){
+//   //   console.log(a["name"])
+//   // }
+
+//   if (Object.values("김성용"))
+// }
+
+// for (let b1 in user){
+//   console.log(b1 + " :" + user[b1])
+// }
+
+// let b1 = Object.entries(user)
+// console.log(b1);
+
+// let b2 = b1.filter(usr => usr.name === "김성용")
+// console.log(b2);
+// console.log(b1.indexOf("김성용"))
+
+
+// for (let b1 of Object.entries(user)){
+//   console.log(b1)
+//   let b12 = user.filter(user => user.name === "김성용")
+//     console.log(Object.keys(Object.values(b12)))
+//   }
+
+
+// let b1 = Object.entries(user)
+// console.log(b1)
+// for (let b1 of Object.entries(user)){
+//   console.log(b1)
+//   console.log(b1.name)
+//   if (b1.name === "김성용"){
+//     console.log(b1)
+//   }
+  // if (console.log(b1) === "김성용"){
+  //   console.log(Object.keys(user))
+  // }
+// }
+
 // 문제3. 깊은 복사를 통해 user 객체의 복사본을 만든 후 name을 본인의 이름으로 수정
+// 풀이 3
+console.log("  문제 3 --------------------------")
+
