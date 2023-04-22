@@ -163,6 +163,14 @@ ex)
     }
 */
 
+
+
+// let a = students.filter(item => item).map(item => item.id + " " +item.name);
+// let b = students.filter(item => item).map 
+    
+// });
+// console.log(a)
+
 // 7. 점수들의 평균값이 가장 높은 학생의 정보만 보여주세요
 
 // 8. 과학을 제외한 점수의 평균이 가장 낮은 학생의 정보만 보여주세요
@@ -180,23 +188,47 @@ ex)
 0410-8번-배상아
   */
 
+// 0410 1번 문다은
+// 1. 2반의 학생들의 정보를 모두 보여주세요
+
+// let c_result = students.map((el) => {
+//   if (el.class === 2) return el;
+//   return;
+// });
+// console.log(c_result);
+
+
+// let a = students.filter(user => user.class === 2 )
+// console.log(a[1])
+
+
+// 4번 문제풀이 문다은
+// 4. 홍길동의 이름을 장보고로 변경해주고 모두 보여주세요
+
+// let h = students.map((item) =>
+//   item.name === "홍길동" ? { ...item, name: "장보고" } : item
+// );
+// console.log(h);
+
+
 
 // 0410 - 3번 윤진섭
 // 3. 이영수의 이름을 국영수로 변경해주고 바뀐 학생의 정보만 보여주세요
 // 방법1 
 
-// let a = students.filter(user => user.name === "이영수");
-// a.map(user => user.name = "국영수")
-// console.log(a)
+//  let a = students.filter(user => user.name === "이영수");
+//  a.map(user => user.name = "국영수")
+//  console.log(a[0].age)
 
 // 방법2
-// let a = [...students.map(user => user.name === "이영수"?{...user,name:"국영수"}:user)];
-// // console.log(a.find(user => user.name === "국영수"));
+// let a = [...students.map(user => user.name === "이영수" ? {...user,name:"국영수"} : user)];
+//  console.log(a.find(user => user.name === "국영수"));
 // console.log(a.find(user => user.name ==="국영수"));
 
 
 
 // 0410 - 6번 윤진섭
 // 6. 나이가 17살 이하인 학생들만 보여주세요
-// let a = [...students.filter(user => user.age <= 17?{...user}:user)];
+// let a = [...students.filter(user => user.age <= 17 ? {...user} :user)];
+// // console.log(a)
 // console.log(a.filter(user => user.age <= 17));
