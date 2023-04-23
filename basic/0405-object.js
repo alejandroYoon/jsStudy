@@ -10,43 +10,6 @@ const webtoons = [
       company: "naver",
     },
   },
-
-  { 
-    name: "Mike", 
-    age: 30, 
-    sex: "m", 
-    school: { 
-      title: "seoul", 
-      scid: 1990, 
-      class: "computer"
-    },
-  },
-
-  {
-    name: "Jane", 
-    age: 27, 
-    sex: "f", 
-    school: {
-      title: "busan", 
-      scid: 4030, 
-      class: "english"
-    },
-  },
-  { 
-    name: "Tom", 
-    age: 10, 
-    sex: "m", 
-    school: {
-      title: "incheon", 
-      scid: 8400, 
-      class: "music"
-    },
-  },
-
-
-
-
-
   {
     id: 2,
     title: "전지적 독자 시점",
@@ -294,5 +257,15 @@ console.log(" --------------- 문제풀이 5번 (윤진섭)")
 
 
 console.log(" --------------- 문제풀이 6번 (문다은)")
-console.log(" --------------- 문제풀이 7번 (배상아)")
 
+
+
+
+console.log(" --------------- 문제풀이 7번 (배상아)")
+// 문제 : 작가중에 이지형이 들어가있는 작가에 "이산시"로 입력하고, 그 객체를 출력하시오.
+webtoons.map((e) => {
+  if (typeof e.contribute.writer === "object") {
+    e.contribute.writer = "이산시";
+  }
+  console.log(...webtoons);
+});
