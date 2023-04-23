@@ -91,3 +91,10 @@ const webtoons = [
         return item;
       });
       console.log(a)
+
+    // webtoons.map((e) => {
+    //   if (typeof e.contribute.writer === "object") {
+    //     e.contribute.writer = "이산시";
+    //   }
+    //   console.log(...webtoons);
+    // });

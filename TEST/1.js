@@ -91,10 +91,9 @@ const webtoons = [
         company: "naver",
       },
       */
-  let a = webtoons.filter(item => item.contribute.writer).map(item => item.contribute.writer)
-  console.log(a)
-  
-  for (i=0; i < webtoons.length; i++){
-    let a = webtoons.filter(item => item.contribute.writer)
-    console.log(a)
-  }
+
+let a = webtoons.filter((user) => user.contribute.writer.includes("이지형")).map(user => {
+  user.contribute.writer = "이산시"
+  return user
+})
+console.log (a)
