@@ -84,6 +84,12 @@ function b1 (name2, value2) {
 let key2 = b1(user, '김성용');
 console.log(key2);
 
+// 다은님 풀이과정
+const kk = Object.keys(user);
+console.log(kk);
+const result = kk.find((key) => user[key] === "김성용");
+console.log(result);
+
 // user.filter(usr => Object.values(usr)).map(usr => )
 
 // for (let b1 of Object.values(user)){
