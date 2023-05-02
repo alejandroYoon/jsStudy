@@ -9,7 +9,7 @@ const TodoPage = () => {
     return (
     <React.Fragment>
         <div>todo</div>
-        <div>:)</div>
+        <div>여기 경로는 /pages/todo/index.js 파일 입니다.....</div>
     </React.Fragment>
     )
 } 

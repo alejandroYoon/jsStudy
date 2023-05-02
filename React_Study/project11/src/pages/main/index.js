@@ -7,24 +7,23 @@ const MainPage = () => {
     const navigate = useNavigate();
 
     const onClicknavigateTodo = () => {
-        // window.location.href = '/todo/3'
+        window.location.href = '/todo/3'
         // navigate(-1)
         // navigate('/todo/3')
-        setSearchParms({
-            todoId: 3,
-            page: 5,
-        })
+        // setSearchParms({
+        //     todoId: 33,
+        //     page: 555,
+        // })
     }
-
 
     return (
     // <></>
     <React.Fragment>
         <div>main</div>
         <div>:)</div>
-        <button onClick={onClicknavigateTodo}>TodoPage로 이동</button>
-        <a href='/todo/3'>TODOPAGE</a>
-        <Link href="/todo/5">TODOPAGE</Link>
+        <button onClick={onClicknavigateTodo}>TodoPage로 이동 - Button onClick 이용</button><br></br>
+        <a href='/todo/3'>TODOPAGE - a href 이용</a><br></br>
+        <Link to ="/todo/5">TODOPAGE - Link to  이용</Link>
     </React.Fragment>
     )
 } 
