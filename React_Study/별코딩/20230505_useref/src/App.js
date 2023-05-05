@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 
-const State = () => {
-  const [count, setCount] = useState(0);
+const Ref = () => {
+  const inputRef = useRef(null);
 
-  const increment = () => {
-    setCount(count + 1);
+  const focusInput = () => {
+    inputRef.current.focus();
   };
 
   return (
     <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment123</button>
+      {/* <input ref={inputRef} type="text" /> */}
+      <input ref={inputRef} type="number"/>
+      <button onClick={focusInput}>Focus Input</button>
     </div>
   );
 };
-
-export default State
+export default Ref;
