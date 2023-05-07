@@ -1,0 +1,78 @@
+구분	내용
+오늘 배우는 리스트	
+styled-components
+
+todolist template
+내일 배우는 리스트	hooks
+지난 주 배운것	
+폴더구조
+
+react router dom
+
+param
+세팅
+주소이동
+link tag
+가장 많이 쓰는 패턴
+
+custom hooks
+mock 데이터	가짜 데이터 만들어서 테스트한다.
+BFF	
+Frontend	아이디어 → 기획 → wire frame → 디자인팀 (스토리보드, figma 로 전달) → 개발팀(요구사항 분석, 컴포넌트 구조) → 개발 → push → 리뷰 (MVP 단계)
+Frontend 에러	front → 센트리 알람 보냄 → 
+오늘 Day03.txt	
+쉬는 시간
+package.json	
+styled-components
+
+styled-reset
+
+2개 있는지 확인해볼것
+
+todomaster
+
+todolist
+스타일드 컴포넌트 시작
+
+하나 : 라우터 프로바이더 말고 다른 적용방식이 있음? 이거 설명
+지00형 : 공통된 레이아웃 안에서 컴포넌트를 렌더링하고 싶음.
+
+
+다른 접근 방식
+
+todolist	
+
+
+지00형 레이아웃	
+src - components - layout - Footer
+
+src - components - layout - Header
+
+src - components - layout - index.js
+
+
+
+js 와 jsx 차이점	
+일반 함수.js
+
+jsx
+
+현재는 jsx 기능을 js 확장자도 같이 쓸수 있어서 상관없다.
+
+jsx 는 무조건 html을 리턴해야한다.
+
+모두 js 로 해도 된다.
+
+js와 jsx 같이 혼합해서 써도 된다.
+
+outlet	routes → layout(route) → outlet
+10분 휴식하고 styled components (02:07~02:20)
+Hooks 배우는 순서	
+useStatus, useRef
+useMemo, useCallback
+useEffect
+useReducer
+useRedux
+useContext
+useRecoil
+rtk
