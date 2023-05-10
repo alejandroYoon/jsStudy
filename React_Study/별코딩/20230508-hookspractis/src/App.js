@@ -1,25 +1,25 @@
-import { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-function App () {
-  const [time,setTime] = useState(4);
-  const handleClick = () => {
-    let newTime;
-    if (time >= 12) {
-      newTime = 1;
-    }else {
-      newTime = time + 1;
-    }
-    setTime(newTime);
-    };
-
-
-  console.log('업데이트');
+function App() {
   return (
-    <div>
-      <span>시계 : { time }시</span><br></br>
-      <button onClick={handleClick}>업데이트</button>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-  )
+  );
 }
 
 export default App;
