@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const hardCalculate = (number) => {
-  console.log('어려운 계산기');
-  for (let i=0; i < 999999999; i++) {} //생각하는 시간
-  return number + 1000;
-};
+function App () {
+  const [time,setTime] = useState(4);
+  const handleClick = () => {
+    let newTime;
+    if (time >= 12) {
+      newTime = 1;
+    }else {
+      newTime = time + 1;
+    }
+    setTime(newTime);
+    };
 
-function App() {
-  const [hardNumber, setHardNumber] = useState(1);
-  const hardSum = hardCalculate(hardNumber);
 
-return (
-  <div>
-    <h3>어려운 계산기</h3>
-    <input
-      type="number"
-      value={hardNumber}
-      onChange={(e) => setHardNumber(parseInt(e.target.value))}
-      />
-      <span> + 1000 = {hardSum}</span>
-  </div>
-  );
+  console.log('업데이트');
+  return (
+    <div>
+      <span>시계 : { time }시</span><br></br>
+      <button onClick={handleClick}>업데이트</button>
+    </div>
+  )
 }
 
 export default App;
